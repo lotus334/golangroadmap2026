@@ -13,6 +13,8 @@ import (
 // go install example/user/hello OR go install (to build)
 // export PATH=$PATH:$(dirname $(go list -f '{{.Target}}' .)) (add the install directory to our PATH to make running binaries easy)
 // hello
+// go clean -modcache (to clean all downloaded modules)
+// go test ./morestrings
 func main() {
     fmt.Println(morestrings.ReverseRunes("!oG ,olleH"))
     fmt.Println(cmp.Diff("Hello World", "Hello Go"))
