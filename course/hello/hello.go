@@ -1,10 +1,11 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 
-    "example/user/hello/morestrings"
-    "github.com/google/go-cmp/cmp"
+	"example/user/hello/morestrings"
+
+	"github.com/google/go-cmp/cmp"
 )
 
 // how to run:
@@ -16,6 +17,6 @@ import (
 // go clean -modcache (to clean all downloaded modules)
 // go test ./morestrings
 func main() {
-    fmt.Println(morestrings.ReverseRunes("!oG ,olleH"))
-    fmt.Println(cmp.Diff("Hello World", "Hello Go"))
+	fmt.Println(morestrings.ReverseRunes("!oG ,olleH"))
+	fmt.Println(cmp.Diff("Hello World", "Hello Go"))
 }
